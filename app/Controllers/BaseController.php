@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\AuthModel; 
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+ 
 
 /**
  * Class BaseController
@@ -36,6 +37,8 @@ abstract class BaseController extends Controller
      * @var list<string>
      */
     protected $helpers = [];
+    protected $session;
+    protected $userModel;
 
     /**
      * Be sure to declare properties for any property fetch you initialized.
@@ -53,6 +56,10 @@ abstract class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = service('session');
+       // Load session service
+       $this->session = \Config\Services::session();
+
+        // Load the AuthModel or other models if necessary
+        $this->userModel = new AuthModel();
     }
 }
