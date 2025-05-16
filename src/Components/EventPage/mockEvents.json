@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "img": "img1.jpg",
+    "eventTitle": "Tech Talk",
+    "eventDescription": "AI in 2025",
+    "location": "London"
+  },
+  {
+    "id": 2,
+    "img": "img2.jpg",
+    "eventTitle": "Workshop",
+    "eventDescription": "React Basics",
+    "location": "New York"
+  },
+  {
+    "id": 3,
+    "img": "img3.jpg",
+    "eventTitle": "Conference",
+    "eventDescription": "Future of Web",
+    "location": "Berlin"
+  },
+  {
+    "id": 4,
+    "img": "img1.jpg",
+    "eventTitle": "Tech Talk",
+    "eventDescription": "AI in 2025",
+    "location": "London"
+  },
+  {
+    "id": 5,
+    "img": "img2.jpg",
+    "eventTitle": "Workshop",
+    "eventDescription": "React Basics",
+    "location": "New York"
+  },
+  {
+    "id": 6,
+    "img": "img3.jpg",
+    "eventTitle": "Conference",
+    "eventDescription": "Future of Web",
+    "location": "Berlin"
+  },{
+    "id": 7,
+    "img": "img1.jpg",
+    "eventTitle": "Tech Talk",
+    "eventDescription": "AI in 2025",
+    "location": "London"
+  },
+  {
+    "id": 8,
+    "img": "img2.jpg",
+    "eventTitle": "Workshop",
+    "eventDescription": "React Basics",
+    "location": "New York"
+  },
+  {
+    "id": 9,
+    "img": "img3.jpg",
+    "eventTitle": "Conference",
+    "eventDescription": "Future of Web",
+    "location": "Berlin"
+  }
+  
+]

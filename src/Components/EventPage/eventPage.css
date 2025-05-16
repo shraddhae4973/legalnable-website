@@ -1,0 +1,156 @@
+.event-page {
+  background: #f3f4f6;
+  min-height: 100vh;
+  min-width: 80vw;
+  padding: 2rem;
+}
+.event-page .container {
+  max-width: 1200px;
+  min-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.event-page .card {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  flex: 1;
+  gap: 1rem;
+}
+.event-page .headerSection {
+  justify-content: space-between;
+}
+.event-page .headerSection .searchBar {
+  padding: 1rem 2rem;
+  background: var(--whiteColor);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+  width: 600px;
+  justify-content: space-between;
+}
+.event-page .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.event-page .headerSection .searchBar .icon {
+  color: var(--textColor);
+}
+.event-page .headerSection .searchBar .icon:hover {
+  color: var(--PrimaryColor);
+}
+.event-page .headerSection .adminDiv {
+  gap: 1rem;
+}
+.event-page .headerSection .adminDiv .icon {
+  font-size: 24px;
+  background: var(--whiteColor);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px var(--inputColor);
+  color: var(--textColor);
+}
+.event-page .headerSection .adminDiv .adminImage {
+  border: 3px solid var(--whiteColor);
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.event-page .headerSection .adminDiv .adminImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.event-page .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between image and details */
+  flex: 1;
+}
+.event-page img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.event-page .details {
+  display: flex;
+  flex-direction: row; /* Arrange title, description, and location in a row */
+  gap: 1.5rem; /* Space between columns */
+  flex: 1;
+  padding: 0 1rem; /* Space at the start and end of the details */
+}
+.event-page .title, .event-page .description, .event-page .location {
+  padding: 0.5rem; /* Space inside each column */
+  margin: 0;
+  gap: 20rem; /* Reset any margin */
+}
+.event-page .title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  gap: 20rem;
+}
+.event-page .description {
+  font-size: 0.95rem;
+  color: #555;
+  gap: 200rem;
+}
+.event-page .location {
+  font-size: 0.8rem;
+  color: #999;
+}
+.event-page .menu {
+  position: relative;
+}
+.event-page .menu .icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.event-page .menu .dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  width: 100px;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+.event-page .menu .dropdown .item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.event-page .menu .dropdown .item:hover {
+  background: #f1f1f1;
+}
+.event-page .menu .dropdown .item.delete {
+  color: red;
+  cursor: pointer;
+}
+.event-page .pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.event-page .pagination button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.event-page .pagination .active-page {
+  background-color: #4a90e2;
+  color: white;
+}/*# sourceMappingURL=eventPage.css.map */

@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Activity Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="activitySection"
+  >
+    <div
+      class="heading flex"
+    >
+      <h1>
+        User Activity
+      </h1>
+      <button
+        class="abtn flex"
+      >
+        See All
+        <span>
+          MockRightArrowIcon
+        </span>
+      </button>
+    </div>
+    <div
+      class="adminContainer grid"
+    >
+      <div
+        class="singleCustomer flex"
+      >
+        <img
+          alt="Customer Right"
+          src="mock-image-path"
+        />
+        <div
+          class="customerDetails"
+        >
+          <span
+            class="name"
+          >
+            User one
+          </span>
+          <small>
+            Registered new user
+          </small>
+        </div>
+        <div
+          class="duration"
+        >
+          6 hours ago
+        </div>
+      </div>
+      <div
+        class="singleCustomer flex"
+      >
+        <img
+          alt="Customer Right"
+          src="mock-image-path"
+        />
+        <div
+          class="customerDetails"
+        >
+          <span
+            class="name"
+          >
+            User two
+          </span>
+          <small>
+            Request for legal Consulting
+          </small>
+        </div>
+        <div
+          class="duration"
+        >
+          15 min ago
+        </div>
+      </div>
+      <div
+        class="singleCustomer flex"
+      >
+        <img
+          alt="Customer Right"
+          src="mock-image-path"
+        />
+        <div
+          class="customerDetails"
+        >
+          <span
+            class="name"
+          >
+            User three
+          </span>
+          <small>
+            Registered to event
+          </small>
+        </div>
+        <div
+          class="duration"
+        >
+          5 days ago
+        </div>
+      </div>
+      <div
+        class="singleCustomer flex"
+      >
+        <img
+          alt="Customer Right"
+          src="mock-image-path"
+        />
+        <div
+          class="customerDetails"
+        >
+          <span
+            class="name"
+          >
+            User one
+          </span>
+          <small>
+            Registered new user
+          </small>
+        </div>
+        <div
+          class="duration"
+        >
+          5 min ago
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

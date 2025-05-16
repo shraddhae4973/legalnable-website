@@ -1,0 +1,312 @@
+/* Color */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --paleGreen: hsl(96, 75%, 89%);
+  --bgColor: hsl(220, 10%, 94%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  /* box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334); */
+  /* Font and Typography*/
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.topSection .headerSection {
+  justify-content: space-between;
+}
+.topSection .headerSection .title h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.topSection .headerSection .searchBar {
+  padding: 1rem 2rem;
+  background: var(--whiteColor);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.topSection .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.topSection .headerSection .searchBar .icon {
+  color: var(--textColor);
+}
+.topSection .headerSection .searchBar .icon:hover {
+  color: var(--PrimaryColor);
+}
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+}
+.topSection .headerSection .adminDiv .icon {
+  font-size: 24px;
+  background: var(--whiteColor);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px var(--inputColor);
+  color: var(--textColor);
+}
+.topSection .headerSection .adminDiv .adminImage {
+  border: 3px solid var(--whiteColor);
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.topSection .headerSection .adminDiv .adminImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.topSection .cardSections {
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.topSection .cardSections .rightCard {
+  position: relative;
+  flex-basis: 70%;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.topSection .cardSections .rightCard .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.topSection .cardSections .rightCard .videoDiv video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.topSection .cardSections .rightCard h1, .topSection .cardSections .rightCard p, .topSection .cardSections .rightCard .abtn {
+  z-index: 100;
+}
+.topSection .cardSections .rightCard h1 {
+  font-size: var(--h1FontSize);
+  color: var(--whiteColor);
+  font-weight: 800;
+}
+.topSection .cardSections .rightCard p {
+  padding: 1rem;
+  color: var(--paleGreen);
+  font-weight: 500;
+}
+.topSection .cardSections .rightCard .buttons {
+  gap: 1rem;
+}
+.topSection .cardSections .rightCard .buttons .abtn {
+  box-shadow: none;
+  padding: 0.8rem 1.5rem;
+  color: var(--PrimaryColor);
+  border: 2px solid transparent;
+}
+.topSection .cardSections .rightCard .buttons .transparent {
+  background: none;
+  border: 2px solid var(--paleGreen);
+  color: var(--paleGreen);
+}
+.topSection .cardSections .rightCard .buttons .transparent:hover {
+  background: var(--paleGreen);
+  color: var(--PrimaryColor);
+}
+.topSection .cardSections .leftCard {
+  flex-basis: 50%;
+}
+.topSection .cardSections .leftCard .mainCard {
+  position: relative;
+  padding: 1rem;
+  height: 200px;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+.topSection .cardSections .leftCard .mainCard::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 75%;
+  background: var(--paleGreen);
+  left: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+.topSection .cardSections .leftCard .mainCard .textDiv {
+  z-index: 100;
+}
+.topSection .cardSections .leftCard .mainCard .textDiv h1 {
+  font-size: 10px;
+  padding-bottom: 1rem;
+  color: var(--blackColor);
+}
+.topSection .cardSections .leftCard .mainCard .textDiv .flex {
+  gap: 1.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.topSection .cardSections .leftCard .mainCard .textDiv .flex small {
+  display: block;
+  color: var(--PrimaryColor);
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.topSection .cardSections .leftCard .mainCard .textDiv .link {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.topSection .cardSections .leftCard .mainCard .textDiv .link:hover {
+  color: var(--PrimaryColor);
+}
+.topSection .cardSections .leftCard .mainCard .textDiv .link:hover .icon {
+  transform: translateX(10px);
+  transition: 0.3s ease;
+}
+.topSection .cardSections .leftCard .mainCard .textDiv .imgDiv {
+  transform: translateY(-20px);
+}
+.topSection .cardSections .leftCard .mainCard .textDiv .imgDiv img {
+  width: 200px;
+}
+.topSection .cardSections .leftCard .sideBarCard {
+  display: none;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+.topSection .cardSections .leftCard .sideBarCard .sideBarIcon {
+  position: absolute;
+  background: var(--HoverColor);
+  border: 10px solid var(--whiteColor);
+  font-size: 3rem;
+  border-radius: 50%;
+  top: -8px;
+  right: 50%;
+  transform: translate(50%);
+  z-index: 100;
+}
+.topSection .cardSections .leftCard .sideBarCard .cardContent {
+  position: relative;
+  padding: 1rem;
+  background: var(--HoverColor);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.topSection .cardSections .leftCard .sideBarCard .cardContent .sideBarBtn {
+  position: relative;
+  color: var(--textColor);
+  z-index: 1000;
+}
+.topSection .cardSections .leftCard .sideBarCard .cardContent .circle1, .topSection .cardSections .leftCard .sideBarCard .cardContent .circle2 {
+  position: absolute;
+  background: var(--paleGreen);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.topSection .cardSections .leftCard .sideBarCard .cardContent .circle1 {
+  height: 100px;
+  width: 100px;
+  top: -50px;
+  left: -50px;
+}
+.topSection .cardSections .leftCard .sideBarCard .cardContent .circle2 {
+  height: 150px;
+  width: 150px;
+  top: -80px;
+  left: -70px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .cardSections {
+    flex-direction: column;
+  }
+  .cardSections .rightCard, .cardSections .leftCard {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .cardSections .leftCard {
+    margin-top: 2rem;
+    align-self: flex-start;
+    height: 10px !important;
+  }
+  .cardSections .leftCard .sideBarCard {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 918px) {
+  .headerSection .searchBar {
+    display: none;
+  }
+}
+@media screen and (max-width: 725px) {
+  .cardSections .leftCard .mainCard {
+    width: 100%;
+  }
+  .cardSections .leftCard .sideBarCard {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .headerSection .adminDiv {
+    display: none;
+  }
+  .headerSection .title {
+    text-align: center;
+    margin: auto;
+  }
+  .cardSections .rightCard {
+    text-align: center;
+  }
+  .cardSections .rightCard .buttons {
+    margin: auto;
+    flex-direction: column;
+  }
+  .cardSections .rightCard .buttons .abtn {
+    width: 100%;
+  }
+  .cardSections .leftCard .mainCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardSections .leftCard .mainCard .textDiv {
+    margin: auto;
+  }
+  .cardSections .leftCard .mainCard::before {
+    width: 100% !important;
+  }
+  .cardSections .leftCard .mainCard .imgDiv {
+    display: none;
+  }
+}
+@media screen and (max-width: 390px) {
+  .topSection .cardSections .rightCard {
+    text-align: center;
+    padding: 2rem;
+  }
+  .topSection .cardSections h1 {
+    font-size: var(--h2FontSize);
+  }
+}/*# sourceMappingURL=topsection.css.map */

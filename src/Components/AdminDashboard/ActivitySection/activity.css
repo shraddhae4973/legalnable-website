@@ -1,0 +1,87 @@
+/* Color */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --paleGreen: hsl(96, 75%, 89%);
+  --bgColor: hsl(220, 10%, 94%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --itemCardColor: hsl(150, 12%, 97%);
+  /* box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334); */
+  /* Font and Typography*/
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.activitySection {
+  flex-basis: 50%;
+}
+.activitySection .heading {
+  width: 100%;
+  justify-content: space-between;
+}
+.activitySection .heading h1 {
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.activitySection .heading .abtn {
+  border: 1px solid transparent;
+}
+.activitySection .heading .abtn:hover {
+  border: 1px solid var(--PrimaryColor);
+}
+.activitySection .adminContainer {
+  margin-top: 1rem;
+}
+.activitySection .adminContainer .singleCustomer {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.activitySection .adminContainer .singleCustomer img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px var(--itemCardColor);
+  margin-right: 1rem;
+}
+.activitySection .adminContainer .singleCustomer .customerDetails {
+  flex: 1;
+}
+.activitySection .adminContainer .singleCustomer .customerDetails .name {
+  font-size: var(--h3FontSize);
+  font-weight: 600;
+  color: var(--blackColor);
+  display: block;
+}
+.activitySection .adminContainer .singleCustomer .customerDetails small {
+  font-weight: 500;
+  color: var(--textColor);
+  font-size: var(--smallFontSize);
+}
+.activitySection .adminContainer .singleCustomer .duration {
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: var(--smallFontSize);
+}
+
+@media screen and (max-width: 918px) {
+  .listingSection .sellers {
+    flex-direction: column;
+  }
+  .listingSection .sellers .card {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=activity.css.map */

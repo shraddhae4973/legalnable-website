@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Color */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --paleGreen: hsl(96, 75%, 89%);
+  --bgColor: hsl(220, 10%, 94%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  /* box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334); */
+  /* Font and Typography*/
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+html {
+  font-size: 90%;
+}
+
+.admin-container {
+  position: relative;
+  width: 95vw; /* Adjust width based on viewport */
+  height: 95vh; /* Ensure minimum height */
+  display: flex; /* Flexbox to align items side by side */
+  justify-content: center; /* Align items to the left */
+  align-items: center;
+  background: var(--bgColor); /* Background color */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 1rem; /* Rounded corners */
+  box-shadow: 2px 2px 8px var(--greyText); /* Add box shadow */
+}
+
+.admin-dashboard {
+  flex-grow: 1; /* This will allow the dashboard to take up remaining space */
+  height: 80%; /* Full height */
+  padding: 1rem; /* Padding for the content */
+  background: var(--bgColor); /* Match background color */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.icon {
+  font-size: var(--h2FontSize);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.abtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--inputColor);
+  padding: 0.8rem 1rem;
+  color: var(--textColor);
+}
+
+.abtn .icon {
+  margin-left: 0.5rem;
+}
+
+.abtn:hover {
+  background: var(--paleGreen);
+  color: var(--PrimaryColor);
+}
+
+.mainContains {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.mainContains .bottom {
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 918px) {
+  .bottom {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 918px) {
+  .heading {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=admindashboard.css.map */
