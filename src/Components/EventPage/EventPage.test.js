@@ -69,7 +69,6 @@ describe('Eventpage Component', () => {
     const eventOnPage2 = await screen.findByText('Event 7');
     expect(eventOnPage2).toBeInTheDocument();
   });
-  
 
   test('dropdown opens and closes on icon click', async () => {
     const buttons = await screen.findAllByRole('button'); // wait for buttons
@@ -93,8 +92,6 @@ describe('Eventpage Component', () => {
     
     expect(mockNavigate).toHaveBeenCalledWith('/events/getSingleEvent/1');
   });
-  
-
   test('calls delete API and removes event from DOM', async () => {
     window.confirm = jest.fn(() => true); // mock confirm popup
   

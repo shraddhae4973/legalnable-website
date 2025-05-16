@@ -27,38 +27,21 @@
 html{
   font-size: 90%;
 }
- 
 
-// body{
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin: auto;
-//   padding: 1rem;
-// }
 
 .admin-container {
   position: relative;
-  width: 95vw;  /* Adjust width based on viewport */
-  height: 95vh;  /* Ensure minimum height */
-  display: flex;  /* Flexbox to align items side by side */
-  justify-content: center;  /* Align items to the left */
+  width: 95vw;   
+  height: 95vh;   
+  display: flex;   
+  justify-content: center;  
   align-items: center;
-  background: var(--bgColor);  /* Background color */
+  background: var(--bgColor);   
   overflow: hidden;  /* Hide any overflow */
   border-radius: 1rem;  /* Rounded corners */
   box-shadow: 2px 2px 8px var(--greyText);  /* Add box shadow */
 }
 
-// .sidebar {
-//   width: 20%;  /* Sidebar takes up 25% of the width */
-//   height: 100%;  /* Ensure sidebar takes the full height */
-//   background: var(--whiteColor);  /* Sidebar background color */
-//   box-shadow: 1px 0px 4px var(--greyText);  /* Sidebar shadow */
-//   padding: 1rem;  /* Add padding */
-//   overflow-y: auto;  /* Allow vertical scrolling if content overflows */
-//   transition: width 0.3s ease;  /* Smooth transition for resizing */
-// }
 
 .admin-dashboard {
   flex-grow: 1;  /* This will allow the dashboard to take up remaining space */

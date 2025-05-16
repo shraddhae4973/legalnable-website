@@ -49,7 +49,7 @@ const About = () => {
             <div data-aos="fade-right" data-aos-duration="2000" className="cardText">
               <h2>Wonderful experience</h2>
               <p>
-              Hello, I'm sharing a clean and responsive react Travel and Stay Website to you. 
+              At Legalnable, we believe that everyone deserves equal access to justice—no matter their abilities. We specialize in bridging the gap between complex legal systems and the real-life challenges faced by people with disabilities. Our unique blend of legal expertise, compassionate advocacy, and community-driven support empowers individuals to understand, claim, and protect their rights confidently.
               </p>
             </div> 
        

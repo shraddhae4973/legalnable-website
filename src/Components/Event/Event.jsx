@@ -2,8 +2,6 @@ import React, {useEffect, useState} from "react";
 import './event.css';
 import { IoMdArrowBack } from "react-icons/io";
 import { IoMdArrowForward } from "react-icons/io";
-import { BsDot } from "react-icons/bs";
-import img from '../../Assets/2.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
@@ -15,8 +13,7 @@ const Event = () => {
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
-
-    // Fetch events from backend
+ 
   // Fetch events from backend
   axios.get("http://localhost:8080/events")
     .then(response => {
@@ -63,22 +60,14 @@ const Event = () => {
 
                   <div className="eventFooter">
 
-                    {/* <div className="number">{id}</div> */}
                     <div className="number">
-      <FaRegHeart  />
-    
-    </div>
+                      <FaRegHeart  />
+                    
+                    </div>
                     <div className="eventText flex">
                       <h6>
                         {eventTitle}
                       </h6>
-
-                      {/* <span className="flex">
-                        <span className="dot">
-                          <BsDot className="icon" />
-                        </span>
-                        Dot
-                      </span> */}
                     </div>
                   </div>
                 </div>

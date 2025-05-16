@@ -33,18 +33,18 @@ describe('Activity Component', () => {
     // Check all customer items are rendered
     const customerItems = screen.getAllByText(/User one/i);
     expect(customerItems.length).toBeGreaterThanOrEqual(2);
-    
- // Check one item has the correct structure
-const activity = document.querySelector('.singleCustomer');
-expect(activity).toHaveClass('singleCustomer', 'flex');
+        
+    // Check one item has the correct structure
+    const activity = document.querySelector('.singleCustomer');
+    expect(activity).toHaveClass('singleCustomer', 'flex');
 
-// Check image
-const img = activity.querySelector('img');
-expect(img).toHaveAttribute('src', 'mock-image-path');
-expect(img).toHaveAttribute('alt', 'Customer Right');
+    // Check image
+    const img = activity.querySelector('img');
+    expect(img).toHaveAttribute('src', 'mock-image-path');
+    expect(img).toHaveAttribute('alt', 'Customer Right');
 
-// Check details
-expect(activity).toHaveTextContent('User oneRegistered new user6 hours ago');
+    // Check details
+    expect(activity).toHaveTextContent('User oneRegistered new user6 hours ago');
 
   });
 

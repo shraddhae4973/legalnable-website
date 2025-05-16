@@ -25,7 +25,6 @@ jest.mock('react-router-dom', () => {
 
 // 2) Mock axios
 jest.mock('axios');
-
 describe('ContentForm — Create Mode', () => {
   beforeEach(() => {
     mockParams.eventId = undefined;
@@ -74,7 +73,6 @@ describe('ContentForm — Create Mode', () => {
   });
   
 });
-
 describe('ContentForm — Edit Mode', () => {
   const EVENT_ID = '42';
   const existing = {
@@ -111,7 +109,6 @@ describe('ContentForm — Edit Mode', () => {
     expect(locationInput).toBeInTheDocument();
     expect(descriptionInput).toBeInTheDocument();
   });
-  
 
   it('submits update successfully', async () => {
     const { container } = render(<ContentForm />);
@@ -140,6 +137,8 @@ describe('ContentForm — Edit Mode', () => {
       expect(mockNavigate).toHaveBeenCalledWith('/eventPage');
     });
   });
-  
-  
 });
+
+
+
+

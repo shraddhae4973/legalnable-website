@@ -8,8 +8,6 @@
   --greyBg: hsl(0, 0%, 96%);
   --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
-  // box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
-
 }
 
 .popular {
@@ -93,14 +91,12 @@
             display: flex;
             align-items: flex-start;
             padding: 0;
-            // padding: 1rem 1.5rem;
             justify-content: center;
             flex-direction: column;
             background: linear-gradient(rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.7559));
             bottom: 0;
             height: 0;
             width: 100%;
-            // height: 100%;
             overflow: hidden;
 
             h3 {
@@ -144,12 +140,6 @@
           .number {
             color: 'gray';
              font-size: '20px';
-            // font-size: 2rem;
-            // font-weight: 700;
-            // color: var(--blackColor);
-            // position: relative;
-            // width: max-content;
-
             &::after {
               content: '';
               position: absolute;
@@ -197,7 +187,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 480px) {
   .popular {

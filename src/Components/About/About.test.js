@@ -41,7 +41,7 @@ describe('About Page', () => {
     const cardTitle = screen.getByText(/Wonderful experience/i);
     expect(cardTitle).toBeInTheDocument();
     
-    const cardText = screen.getByText(/Hello, I'm sharing a clean and responsive react Travel and Stay Website/i);
+    const cardText = screen.getByText(/At Legalnable, we believe that everyone deserves equal access to justice—no matter their abilities. We specialize in bridging the gap between complex legal systems and the real-life challenges faced by people with disabilities. Our unique blend of legal expertise, compassionate advocacy, and community-driven support empowers individuals to understand, claim, and protect their rights confidently./i);
     expect(cardText).toBeInTheDocument();
     
     // Get the video element

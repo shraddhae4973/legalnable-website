@@ -5,15 +5,12 @@ import axios from 'axios';
 
 const ContentForm = () => {
   const navigate = useNavigate();
-
-
   const { eventId } = useParams(); // Get eventId from URL if it's an edit
   const [eventTitle, setEventTitle] = useState('');
   const [location, setLocation] = useState('');
   const [eventDescription, setEventDescription] = useState('');
   const [img, setImg] = useState(null);
   const [message, setMessage] = useState('');
-
 
 // If we are editing, fetch the current event details
 useEffect(() => {
@@ -25,7 +22,7 @@ useEffect(() => {
         setEventTitle(eventTitle);
         setLocation(location);
         setEventDescription(eventDescription);
-        setImg(img); // Set img if needed (maybe a preview or URL)
+        setImg(img);  
       })
       .catch(error => {
         console.error("Error fetching event details:", error);
